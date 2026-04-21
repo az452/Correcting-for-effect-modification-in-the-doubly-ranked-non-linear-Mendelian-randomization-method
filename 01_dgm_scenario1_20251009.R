@@ -60,14 +60,7 @@ for (scenario_name in names(scenario_rhos)) {
     
     # Store data
     df <- data.frame(G, U, E1, E2, ex, ey, X, Y)
-    
-    # GxE-corrected exposure
-    fit <- lm(X ~ G + E1 + E2 + G:E1 + G:E2, data = df)
-    b_GE1 <- coef(fit)["G:E1"]
-    b_GE2 <- coef(fit)["G:E2"]
-    
-    df$X1 <- df$X - b_GE1 * df$G * df$E1 - b_GE2 * df$G * df$E2
-    
+        
     sim_list[[i]] <- df
   }
   
