@@ -52,8 +52,7 @@ This directory contains all the scripts used in the manuscript on **correcting f
   - `10_gxeInteraction_vitd_focusedScore_20250405.R`
   - `11_gxeInteraction_bmi_20250407.R`
   - `12_gxeInteraction_ldl_20250428.R`
-- **Figure:**
-  - `Figure5.R`
+- **Figure:** `Figure5.R`
 
 ## Falsification Test
 
