@@ -17,7 +17,7 @@ source("helpers/create_nlmr_summary2025.R")
 # Load and prepare data
 #===============================================================================
 
-load("/rds/user/az452/hpc-work/re_analysis/rdata_vitd_crp_20250312.RData")
+load("rdata_vitd_crp_20250312.RData")
 
 df0 <- vitd.crp %>%
   left_join(dat[, c("app20175", "towndepriv")], by = "app20175") %>%
